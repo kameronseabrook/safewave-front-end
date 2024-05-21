@@ -1,0 +1,345 @@
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+
+
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+
+// $secondary-color1: #000000;
+// $secondary-color2: #FFFFFF;
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+
+// Breakpoints
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+// // Colors
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+// $secondary-color1: #000000;
+// $secondary-color2: #FFFFFF;
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+// // Spacing and Borders
+// $input-padding: 10px;
+// $input-border-radius: 5px;
+
+
+
+// src/styles/partials/_variables.scss
+
+// Breakpoints
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+// // Colors
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+// $secondary-color1: #000000;
+// $secondary-color2: #FFFFFF;
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+// // Spacing and Borders
+// $input-padding: 10px;
+// $input-border-radius: 20px; // Adjusted to match the new design
+
+// // Fonts
+// $font-family: 'Helvetica Neue', Arial, sans-serif;
+// $font-size: 16px;
+// $line-height: 1.5;
+
+// // Box Shadow
+// $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+// src/styles/partials/_variables.scss
+
+// // Breakpoints
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+// // Colors
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+// $secondary-color1: #000000;
+// $secondary-color2: #FFFFFF;
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+// // Accent Colors
+// $accent-color1: #FF6F61;
+// $accent-color2: #6B5B95;
+// $accent-color3: #88B04B;
+
+// // Light Mode Colors
+// $light-bg-color: #F5F5F5;
+// $light-text-color: #000000;
+// $light-border-color: #CCCCCC;
+
+// // Dark Mode Colors
+// $dark-bg-color: #2C2C2C;
+// $dark-text-color: #FFFFFF;
+// $dark-border-color: #444444;
+
+// // Spacing and Borders
+// $input-padding: 10px;
+// $input-border-radius: 20px; // Adjusted to match the new design
+
+// // Fonts
+// $font-family: 'Helvetica Neue', Arial, sans-serif;
+// $font-size: 16px;
+// $line-height: 1.5;
+
+// // Box Shadow
+// $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+// src/styles/partials/_variables.scss
+
+// Breakpoints
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+// // Colors
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+// $secondary-color1: #000000;
+// $secondary-color2: #FFFFFF;
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+// // Accent Colors
+// $accent-color1: #FF6F61;
+// $accent-color2: #6B5B95;
+// $accent-color3: #88B04B;
+
+// // Light Mode Colors
+// $light-bg-color: #F5F5F5;
+// $light-text-color: #000000;
+// $light-border-color: #CCCCCC;
+
+// // Dark Mode Colors
+// $dark-bg-color: #2C2C2C;
+// $dark-text-color: #FFFFFF;
+// $dark-border-color: #444444;
+
+// // Spacing and Borders
+// $input-padding: 10px;
+// $input-border-radius: 20px; // Adjusted to match the new design
+
+// // Fonts
+// $font-family: 'Helvetica Neue', Arial, sans-serif;
+// $font-size: 16px;
+// $line-height: 1.5;
+
+// // Box Shadow
+// $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+// src/styles/partials/_variables.scss
+
+// // Breakpoints
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+// // Colors
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+// $secondary-color1: #000000;
+// $secondary-color2: #FFFFFF;
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+// // Accent Colors
+// $accent-color1: #FF6F61;
+// $accent-color2: #6B5B95;
+// $accent-color3: #88B04B;
+
+// // Light Mode Colors
+// $light-bg-color: #F5F5F5;
+// $light-text-color: #000000;
+// $light-border-color: #CCCCCC;
+
+// // Dark Mode Colors
+// $dark-bg-color: #1E1E1E; // Adjusted to resemble ChatGPT dark mode
+// $dark-text-color: #E0E0E0; // Adjusted to resemble ChatGPT dark mode
+// $dark-border-color: #444444;
+// $dark-input-bg-color: #333333; // Input background for dark mode
+// $dark-input-border-color: #555555; // Input border color for dark mode
+
+// // Spacing and Borders
+// $input-padding: 10px;
+// $input-border-radius: 10px; // Adjusted to match the new design
+
+// // Fonts
+// $font-family: 'Helvetica Neue', Arial, sans-serif;
+// $font-size: 16px;
+// $line-height: 1.5;
+
+// // Box Shadow
+// $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+// src/styles/partials/_variables.scss
+
+// Breakpoints
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+// // Colors
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+// $secondary-color1: #000000;
+// $secondary-color2: #FFFFFF;
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+// // Accent Colors
+// $accent-color1: #FF6F61;
+// $accent-color2: #6B5B95;
+// $accent-color3: #88B04B;
+
+// // Light Mode Colors
+// $light-bg-color: #F5F5F5;
+// $light-text-color: #000000;
+// $light-border-color: #CCCCCC;
+
+// // Dark Mode Colors
+// $dark-bg-color: #1E1E1E; // Adjusted to resemble ChatGPT dark mode
+// $dark-text-color: #E0E0E0; // Adjusted to resemble ChatGPT dark mode
+// $dark-border-color: #444444;
+// $dark-input-bg-color: #333333; // Input background for dark mode
+// $dark-input-border-color: #555555; // Input border color for dark mode
+
+// // Spacing and Borders
+// $input-padding: 10px;
+// $input-border-radius: 10px; // Adjusted to match the new design
+
+// // Fonts
+// $font-family: 'Helvetica Neue', Arial, sans-serif;
+// $font-size: 16px;
+// $line-height: 1.5;
+
+// // Box Shadow
+// $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+// src/styles/partials/_variables.scss
+
+// // Breakpoints
+// $tablet-breakpoint: 768px;
+// $desktop-breakpoint: 1024px;
+// $max-breakpoint: 1280px;
+
+// // Colors
+// $primary-color1: #19B7EF;
+// $primary-color2: #FFC134;
+
+// $secondary-color1: #000000;
+// $secondary-color2: #E0E0E0; // Light text color (for contrast)
+// $secondary-color3: #17171A;
+// $secondary-color4: #3E3E4B;
+// $secondary-color5: #d4d4d4;
+
+// // Accent Colors
+// $accent-color1: #FF6F61;
+// $accent-color2: #6B5B95;
+// $accent-color3: #88B04B;
+
+// // Light Mode Colors
+// $light-bg-color: #2C2C2C; // Darker color for light mode background
+// $light-text-color: #E0E0E0; // Light text color
+// $light-border-color: #444444;
+
+// // Dark Mode Colors
+// $dark-bg-color: #1E1E1E; // Adjusted to resemble ChatGPT dark mode
+// $dark-text-color: #E0E0E0; // Adjusted to resemble ChatGPT dark mode
+// $dark-border-color: #444444;
+// $dark-input-bg-color: #333333; // Input background for dark mode
+// $dark-input-border-color: #555555; // Input border color for dark mode
+
+// // Spacing and Borders
+// $input-padding: 10px;
+// $input-border-radius: 10px; // Adjusted to match the new design
+
+// // Fonts
+// $font-family: 'Helvetica Neue', Arial, sans-serif;
+// $font-size: 16px;
+// $line-height: 1.5;
+
+// // Box Shadow
+// $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+
+// src/styles/partials/_variables.scss
+
+// Breakpoints
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+$max-breakpoint: 1280px;
+
+// Colors
+$primary-color1: #19B7EF;
+$primary-color2: #FFC134;
+
+$secondary-color1: #000000;
+$secondary-color2: #E0E0E0;
+$secondary-color3: #17171A;
+$secondary-color4: #3E3E4B;
+$secondary-color5: #d4d4d4;
+
+// Accent Colors
+$accent-color1: #FF6F61;
+$accent-color2: #6B5B95;
+$accent-color3: #88B04B;
+
+// Light Mode Colors
+$light-bg-color: #2E2E2E; // Darker color for light mode background
+$light-text-color: #E0E0E0; // Light text color
+$light-border-color: #444444;
+
+// Dark Mode Colors
+$dark-bg-color: #1E1E1E; // Adjusted to resemble ChatGPT dark mode
+$dark-text-color: #E0E0E0; // Adjusted to resemble ChatGPT dark mode
+$dark-border-color: #444444;
+$dark-input-bg-color: #333333; // Input background for dark mode
+$dark-input-border-color: #555555; // Input border color for dark mode
+
+// Spacing and Borders
+$input-padding: 10px;
+$input-border-radius: 10px; // Adjusted to match the new design
+
+// Fonts
+$font-family: 'Helvetica Neue', Arial, sans-serif;
+$font-size: 16px;
+$line-height: 1.5;
+
+// Box Shadow
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

@@ -1,4 +1,4 @@
-import Chat from "./components/chat/chat";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage/home";
 

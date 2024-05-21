@@ -1,0 +1,1249 @@
+// .chat-container {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100vh;
+//   }
+  
+//   .chat-box {
+//     flex: 1;
+//     padding: 10px;
+//     overflow-y: auto;
+//     background-color: #f5f5f5;
+//   }
+  
+//   .message {
+//     margin: 10px 0;
+//     padding: 10px;
+//     border-radius: 10px;
+//     max-width: 80%;
+//     word-wrap: break-word;
+//   }
+  
+//   .message.user {
+//     background-color: #d1e7ff;
+//     align-self: flex-end;
+//     text-align: right;
+//   }
+  
+//   .message.assistant {
+//     background-color: #ffffff;
+//     align-self: flex-start;
+//     text-align: left;
+//   }
+  
+//   .input-form {
+//     display: flex;
+//     border-top: 1px solid #ccc;
+//     padding: 10px;
+//     background-color: #fff;
+//   }
+  
+//   .input-box {
+//     flex: 1;
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     margin-right: 10px;
+//     resize: none;
+//   }
+  
+//   .submit-button {
+//     padding: 10px 20px;
+//     background-color: #007bff;
+//     color: #fff;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//   }
+  
+//   .submit-button:hover {
+//     background-color: #0056b3;
+//   }
+
+
+// .chat-container {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100vh;
+//   }
+  
+//   .chat-box {
+//     flex: 1;
+//     padding: 10px;
+//     overflow-y: auto;
+//     background-color: #f5f5f5;
+//   }
+  
+//   .message {
+//     margin: 10px 0;
+//     padding: 10px;
+//     border-radius: 10px;
+//     max-width: 80%;
+//     word-wrap: break-word;
+//   }
+  
+//   .message.user {
+//     background-color: #d1e7ff;
+//     align-self: flex-end;
+//     text-align: right;
+//   }
+  
+//   .message.assistant {
+//     background-color: #ffffff;
+//     align-self: flex-start;
+//     text-align: left;
+//   }
+  
+//   .loading-animation {
+//     display: flex;
+//     justify-content: center;
+//     margin: 10px 0;
+//   }
+  
+//   .input-form {
+//     display: flex;
+//     border-top: 1px solid #ccc;
+//     padding: 10px;
+//     background-color: #fff;
+//     flex-direction: column; /* Stack elements vertically */
+//   }
+  
+//   .input-box {
+//     flex: 1;
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     margin-top: 10px; /* Add some space between the animation and the input */
+//     resize: none;
+//   }
+  
+//   .submit-button {
+//     padding: 10px 20px;
+//     background-color: #007bff;
+//     color: #fff;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     margin-top: 10px; /* Add some space between the input and the button */
+//   }
+  
+//   .submit-button:hover {
+//     background-color: #0056b3;
+//   }
+  
+  
+// src/styles/chat.scss
+
+// @import '../../styles/partials/variables.scss';
+
+// .chat-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: $secondary-color2; // Adjusted to use a variable
+// }
+
+// .chat-box {
+//   flex: 1;
+//   padding: 10px;
+//   overflow-y: auto;
+//   background-color: $secondary-color5; // Adjusted to use a variable
+// }
+
+// .message {
+//   margin: 10px 0;
+//   padding: 10px;
+//   border-radius: 10px;
+//   max-width: 80%;
+//   word-wrap: break-word;
+
+//   &.user {
+//     background-color: $primary-color1; // Adjusted to use a variable
+//     align-self: flex-end;
+//     text-align: right;
+//   }
+
+//   &.assistant {
+//     background-color: $secondary-color2; // Adjusted to use a variable
+//     align-self: flex-start;
+//     text-align: left;
+//   }
+// }
+
+// .loading-animation {
+//   display: flex;
+//   justify-content: center;
+//   margin: 10px 0;
+// }
+
+// .input-form {
+//   display: flex;
+//   flex-direction: column; // Stack elements vertically
+//   border-top: 1px solid $secondary-color5; // Adjusted to use a variable
+//   padding: 10px;
+//   background-color: $secondary-color2; // Adjusted to use a variable
+// }
+
+// .input-box {
+//   flex: 1;
+//   padding: 10px;
+//   border: 1px solid $secondary-color5; // Adjusted to use a variable
+//   border-radius: 5px;
+//   margin-top: 10px; // Add some space between the animation and the input
+//   resize: none;
+// }
+
+// .submit-button {
+//   padding: 10px 20px;
+//   background-color: $primary-color1; // Adjusted to use a variable
+//   color: $secondary-color2; // Adjusted to use a variable
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   margin-top: 10px; // Add some space between the input and the button
+
+//   &:hover {
+//     background-color: $primary-color2; // Adjusted to use a variable
+//   }
+// }
+
+
+
+
+// src/styles/chat.scss
+
+@import '../../styles/partials/variables.scss';
+
+// .chat-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: $secondary-color2;
+//   @media (max-width: $tablet-breakpoint) {
+//     height: 100%;
+//   }
+// }
+
+// .chat-box {
+//   flex: 1;
+//   padding: 10px;
+//   overflow-y: auto;
+//   background-color: $secondary-color5;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .message {
+//   margin: 10px 0;
+//   padding: 10px;
+//   border-radius: 10px;
+//   max-width: 80%;
+//   word-wrap: break-word;
+//   align-self: flex-end; /* Aligns all messages to the right */
+
+//   &.user {
+//     background-color: $primary-color1;
+//     text-align: right;
+//   }
+
+//   &.assistant {
+//     background-color: $secondary-color2;
+//     text-align: left;
+//   }
+
+//   &.typing {
+//     background-color: $primary-color1;
+//     text-align: left;
+//     border: 1px dashed $primary-color2;
+//     font-style: italic;
+//   }
+// }
+
+// .loading-animation {
+//   display: flex;
+//   justify-content: center;
+//   margin: 10px 0;
+// }
+
+// .input-form {
+//   display: flex;
+//   flex-direction: row; /* Arrange input and button horizontally */
+//   border-top: 1px solid $secondary-color5;
+//   padding: 10px;
+//   background-color: $secondary-color2;
+//   @media (max-width: $tablet-breakpoint) {
+//     flex-direction: column; /* Stack vertically on smaller screens */
+//   }
+// }
+
+// .input-box {
+//   flex: 1;
+//   padding: $input-padding;
+//   border: 1px solid $secondary-color5;
+//   border-radius: $input-border-radius;
+//   resize: none;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-bottom: 10px; /* Add space when stacked vertically */
+//   }
+// }
+
+// .submit-button {
+//   padding: 10px 20px;
+//   background-color: $primary-color1;
+//   color: $secondary-color2;
+//   border: none;
+//   border-radius: $input-border-radius;
+//   cursor: pointer;
+//   margin-left: 10px; /* Space between input and button */
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-left: 0;
+//     margin-top: 10px; /* Space when stacked vertically */
+//   }
+
+//   &:hover {
+//     background-color: $primary-color2;
+//   }
+// }
+
+
+// .chat-container {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100vh;
+//     background-color: $secondary-color2;
+//     font-family: 'Helvetica Neue', Arial, sans-serif;
+//     color: $secondary-color1;
+//     @media (max-width: $tablet-breakpoint) {
+//       height: 100%;
+//     }
+//   }
+  
+//   .chat-box {
+//     flex: 1;
+//     padding: 20px;
+//     overflow-y: auto;
+//     background-color: $secondary-color5;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px; // Add gap between messages for cleaner separation
+//   }
+  
+//   .message {
+//     margin: 5px 0;
+//     padding: 10px 15px;
+//     border-radius: 20px;
+//     max-width: 75%;
+//     word-wrap: break-word;
+//     font-size: 16px;
+//     line-height: 1.5;
+//     align-self: flex-end; /* Aligns all messages to the right */
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Add subtle shadow for depth
+  
+//     &.user {
+//       background-color: $primary-color1;
+//       color: $secondary-color2;
+//       text-align: right;
+//     }
+  
+//     &.assistant {
+//       background-color: $secondary-color2;
+//       color: $secondary-color1;
+//       align-self: flex-start;
+//       text-align: left;
+//       border: 1px solid $secondary-color4; // Add border for better definition
+//     }
+  
+//     &.typing {
+//       background-color: $primary-color1;
+//       color: $secondary-color2;
+//       text-align: left;
+//       border: 1px dashed $primary-color2;
+//       font-style: italic;
+//     }
+//   }
+  
+//   .loading-animation {
+//     display: flex;
+//     justify-content: center;
+//     margin: 10px 0;
+//   }
+  
+//   .input-form {
+//     display: flex;
+//     flex-direction: row; /* Arrange input and button horizontally */
+//     border-top: 1px solid $secondary-color4;
+//     padding: 10px;
+//     background-color: $secondary-color2;
+//     align-items: center;
+//     @media (max-width: $tablet-breakpoint) {
+//       flex-direction: column; /* Stack vertically on smaller screens */
+//     }
+//   }
+  
+//   .input-box {
+//     flex: 1;
+//     padding: $input-padding;
+//     border: 1px solid $secondary-color4;
+//     border-radius: $input-border-radius;
+//     resize: none;
+//     font-size: 16px;
+//     @media (max-width: $tablet-breakpoint) {
+//       margin-bottom: 10px; /* Add space when stacked vertically */
+//     }
+//   }
+  
+//   .submit-button {
+//     padding: 10px 20px;
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     border: none;
+//     border-radius: $input-border-radius;
+//     cursor: pointer;
+//     margin-left: 10px; /* Space between input and button */
+//     font-size: 16px;
+//     font-weight: bold;
+//     transition: background-color 0.3s ease;
+//     @media (max-width: $tablet-breakpoint) {
+//       margin-left: 0;
+//       margin-top: 10px; /* Space when stacked vertically */
+//     }
+  
+//     &:hover {
+//       background-color: $primary-color2;
+//     }
+//   }
+
+
+
+// src/styles/chat.scss
+
+@import '../../styles/partials/variables.scss';
+
+// .chat-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: var(--bg-color);
+//   font-family: $font-family;
+//   color: var(--text-color);
+//   @media (max-width: $tablet-breakpoint) {
+//     height: 100%;
+//   }
+// }
+
+// .chat-box {
+//   flex: 1;
+//   padding: 20px;
+//   overflow-y: auto;
+//   background-color: var(--bg-color);
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px; // Add gap between messages for cleaner separation
+// }
+
+// .message {
+//   margin: 5px 0;
+//   padding: 10px 15px;
+//   border-radius: $input-border-radius;
+//   max-width: 75%;
+//   word-wrap: break-word;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   align-self: flex-end; /* Aligns all messages to the right */
+//   box-shadow: $box-shadow; // Add subtle shadow for depth
+
+//   &.user {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: right;
+//   }
+
+//   &.assistant {
+//     background-color: var(--text-color);
+//     color: var(--bg-color);
+//     align-self: flex-start;
+//     text-align: left;
+//     border: 1px solid var(--border-color); // Add border for better definition
+//   }
+
+//   &.typing {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: left;
+//     border: 1px dashed $primary-color2;
+//     font-style: italic;
+//   }
+// }
+
+// .loading-animation {
+//   display: flex;
+//   justify-content: center;
+//   margin: 10px 0;
+// }
+
+// .input-form {
+//   display: flex;
+//   flex-direction: row; /* Arrange input and button horizontally */
+//   border-top: 1px solid var(--border-color);
+//   padding: 10px;
+//   background-color: var(--bg-color);
+//   align-items: center;
+//   @media (max-width: $tablet-breakpoint) {
+//     flex-direction: column; /* Stack vertically on smaller screens */
+//   }
+// }
+
+// .input-box {
+//   flex: 1;
+//   padding: $input-padding;
+//   border: 1px solid var(--border-color);
+//   border-radius: $input-border-radius;
+//   resize: none;
+//   font-size: $font-size;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-bottom: 10px; /* Add space when stacked vertically */
+//   }
+// }
+
+// .submit-button {
+//   padding: 10px 20px;
+//   background-color: $primary-color1;
+//   color: $secondary-color2;
+//   border: none;
+//   border-radius: $input-border-radius;
+//   cursor: pointer;
+//   margin-left: 10px; /* Space between input and button */
+//   font-size: $font-size;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-left: 0;
+//     margin-top: 10px; /* Space when stacked vertically */
+//   }
+
+//   &:hover {
+//     background-color: $primary-color2;
+//   }
+// }
+
+// .theme-toggle {
+//   position: fixed;
+//   top: 10px;
+//   right: 10px;
+//   background-color: $accent-color1;
+//   color: $secondary-color2;
+//   padding: 10px;
+//   border: none;
+//   border-radius: $input-border-radius;
+//   cursor: pointer;
+//   font-size: $font-size;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: $accent-color2;
+//   }
+// }
+
+// src/styles/chat.scss
+
+// @import '../../styles/partials/variables.scss';
+
+// /* Light Mode */
+// :root {
+//   --bg-color: $light-bg-color;
+//   --text-color: $light-text-color;
+//   --border-color: $light-border-color;
+// }
+
+// /* Dark Mode */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --bg-color: $dark-bg-color;
+//     --text-color: $dark-text-color;
+//     --border-color: $dark-border-color;
+//   }
+// }
+
+// .chat-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: var(--bg-color);
+//   font-family: $font-family;
+//   color: var(--text-color);
+//   @media (max-width: $tablet-breakpoint) {
+//     height: 100%;
+//   }
+// }
+
+// .chat-box {
+//   flex: 1;
+//   padding: 20px;
+//   overflow-y: auto;
+//   background-color: var(--bg-color);
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px; // Add gap between messages for cleaner separation
+// }
+
+// .message {
+//   margin: 5px 0;
+//   padding: 10px 15px;
+//   border-radius: $input-border-radius;
+//   max-width: 75%;
+//   word-wrap: break-word;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   align-self: flex-end; /* Aligns all messages to the right */
+//   box-shadow: $box-shadow; // Add subtle shadow for depth
+
+//   &.user {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: right;
+//   }
+
+//   &.assistant {
+//     background-color: var(--text-color);
+//     color: var(--bg-color);
+//     align-self: flex-start;
+//     text-align: left;
+//     border: 1px solid var(--border-color); // Add border for better definition
+//   }
+
+//   &.typing {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: left;
+//     border: 1px dashed $primary-color2;
+//     font-style: italic;
+//   }
+// }
+
+// .loading-animation {
+//   display: flex;
+//   justify-content: center;
+//   margin: 10px 0;
+// }
+
+// .input-form {
+//   display: flex;
+//   flex-direction: row; /* Arrange input and button horizontally */
+//   border-top: 1px solid var(--border-color);
+//   padding: 10px;
+//   background-color: var(--bg-color);
+//   align-items: center;
+//   @media (max-width: $tablet-breakpoint) {
+//     flex-direction: column; /* Stack vertically on smaller screens */
+//   }
+// }
+
+// .input-box {
+//   flex: 1;
+//   padding: $input-padding;
+//   border: 1px solid var(--border-color);
+//   border-radius: $input-border-radius;
+//   resize: none;
+//   font-size: $font-size;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-bottom: 10px; /* Add space when stacked vertically */
+//   }
+// }
+
+// .submit-button {
+//   padding: 10px 20px;
+//   background-color: $primary-color1;
+//   color: $secondary-color2;
+//   border: none;
+//   border-radius: $input-border-radius;
+//   cursor: pointer;
+//   margin-left: 10px; /* Space between input and button */
+//   font-size: $font-size;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-left: 0;
+//     margin-top: 10px; /* Space when stacked vertically */
+//   }
+
+//   &:hover {
+//     background-color: $primary-color2;
+//   }
+// }
+
+
+// src/styles/chat.scss
+
+@import '../../styles/partials/variables.scss';
+
+// /* Light Mode */
+// :root {
+//   --bg-color: $light-bg-color;
+//   --text-color: $light-text-color;
+//   --border-color: $light-border-color;
+//   --input-bg-color: $secondary-color2; // Light input background color
+//   --input-border-color: $secondary-color4; // Light input border color
+// }
+
+// /* Dark Mode */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --bg-color: $dark-bg-color;
+//     --text-color: $dark-text-color;
+//     --border-color: $dark-border-color;
+//     --input-bg-color: $dark-input-bg-color;
+//     --input-border-color: $dark-input-border-color;
+//   }
+// }
+
+// .chat-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: var(--bg-color);
+//   font-family: $font-family;
+//   color: var(--text-color);
+//   align-items: center;
+//   padding: 20px;
+//   @media (max-width: $tablet-breakpoint) {
+//     height: 100%;
+//     padding: 10px;
+//   }
+// }
+
+// .chat-box {
+//   flex: 1;
+//   width: 100%;
+//   max-width: 800px; // Limit the width on larger screens
+//   padding: 20px;
+//   overflow-y: auto;
+//   background-color: var(--bg-color);
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px; // Add gap between messages for cleaner separation
+// }
+
+// .message {
+//   margin: 5px 0;
+//   padding: 10px 15px;
+//   border-radius: $input-border-radius;
+//   max-width: 75%;
+//   word-wrap: break-word;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   align-self: flex-end; /* Aligns all messages to the right */
+//   box-shadow: $box-shadow; // Add subtle shadow for depth
+
+//   &.user {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: right;
+//   }
+
+//   &.assistant {
+//     background-color: var(--text-color);
+//     color: var(--bg-color);
+//     align-self: flex-start;
+//     text-align: left;
+//     border: 1px solid var(--border-color); // Add border for better definition
+//   }
+
+//   &.typing {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: left;
+//     border: 1px dashed $primary-color2;
+//     font-style: italic;
+//   }
+// }
+
+// .loading-animation {
+//   display: flex;
+//   justify-content: center;
+//   margin: 10px 0;
+// }
+
+// .input-form {
+//   display: flex;
+//   flex-direction: row; /* Arrange input and button horizontally */
+//   border-top: 1px solid var(--border-color);
+//   padding: 10px;
+//   background-color: var(--bg-color);
+//   width: 100%;
+//   max-width: 800px; // Limit the width on larger screens
+//   align-items: center;
+//   @media (max-width: $tablet-breakpoint) {
+//     flex-direction: column; /* Stack vertically on smaller screens */
+//     max-width: none;
+//   }
+// }
+
+// .input-box {
+//   flex: 1;
+//   padding: $input-padding;
+//   border: 1px solid var(--input-border-color);
+//   border-radius: $input-border-radius;
+//   resize: none;
+//   font-size: $font-size;
+//   background-color: var(--input-bg-color); // Use dynamic background color
+//   color: var(--text-color);
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-bottom: 10px; /* Add space when stacked vertically */
+//   }
+// }
+
+// .submit-button {
+//   padding: 10px 20px;
+//   background-color: $primary-color1;
+//   color: $secondary-color2;
+//   border: none;
+//   border-radius: $input-border-radius;
+//   cursor: pointer;
+//   margin-left: 10px; /* Space between input and button */
+//   font-size: $font-size;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-left: 0;
+//     margin-top: 10px; /* Space when stacked vertically */
+//   }
+
+//   &:hover {
+//     background-color: $primary-color2;
+//   }
+// }
+
+// src/styles/chat.scss
+
+@import '../../styles/partials/variables.scss';
+
+
+
+// /* Light Mode */
+// :root {
+//   --bg-color: $light-bg-color;
+//   --text-color: $light-text-color;
+//   --border-color: $light-border-color;
+//   --input-bg-color: $secondary-color3; // Light input background color
+//   --input-border-color: $secondary-color4; // Light input border color
+//   --message-bg-color: $secondary-color4; // Light mode message background color
+// }
+
+// /* Dark Mode */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --bg-color: $dark-bg-color;
+//     --text-color: $dark-text-color;
+//     --border-color: $dark-border-color;
+//     --input-bg-color: $dark-input-bg-color;
+//     --input-border-color: $dark-input-border-color;
+//     --message-bg-color: $secondary-color1; // Dark mode message background color
+//   }
+// }
+
+// .chat-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: var(--bg-color);
+//   font-family: $font-family;
+//   color: var(--text-color);
+//   align-items: center;
+//   padding: 20px;
+//   @media (max-width: $tablet-breakpoint) {
+//     height: 100%;
+//     padding: 10px;
+//   }
+// }
+
+// .chat-box {
+//   flex: 1;
+//   width: 100%;
+//   max-width: 800px; // Limit the width on larger screens
+//   padding: 20px;
+//   overflow-y: auto;
+//   background-color: var(--bg-color);
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px; // Add gap between messages for cleaner separation
+// }
+
+// .message {
+//   margin: 5px 0;
+//   padding: 10px 15px;
+//   border-radius: $input-border-radius;
+//   max-width: 75%;
+//   word-wrap: break-word;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   align-self: flex-end; /* Aligns all messages to the right */
+//   box-shadow: $box-shadow; // Add subtle shadow for depth
+//   background-color: var(--message-bg-color); // Dynamic background color for messages
+
+//   &.user {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: right;
+//   }
+
+//   &.assistant {
+//     background-color: var(--text-color);
+//     color: var(--bg-color);
+//     align-self: flex-start;
+//     text-align: left;
+//     border: 1px solid var(--border-color); // Add border for better definition
+//   }
+
+//   &.typing {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: left;
+//     border: 1px dashed $primary-color2;
+//     font-style: italic;
+//   }
+// }
+
+// .loading-animation {
+//   display: flex;
+//   justify-content: center;
+//   margin: 10px 0;
+// }
+
+// .input-form {
+//   display: flex;
+//   flex-direction: row; /* Arrange input and button horizontally */
+//   border-top: 1px solid var(--border-color);
+//   padding: 10px;
+//   background-color: var(--bg-color);
+//   width: 100%;
+//   max-width: 800px; // Limit the width on larger screens
+//   align-items: center;
+//   @media (max-width: $tablet-breakpoint) {
+//     flex-direction: column; /* Stack vertically on smaller screens */
+//     max-width: none;
+//   }
+// }
+
+// .input-box {
+//   flex: 1;
+//   padding: $input-padding;
+//   border: 1px solid var(--input-border-color);
+//   border-radius: $input-border-radius;
+//   resize: none;
+//   font-size: $font-size;
+//   background-color: var(--input-bg-color); // Use dynamic background color
+//   color: var(--text-color);
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-bottom: 10px; /* Add space when stacked vertically */
+//   }
+// }
+
+// .submit-button {
+//   padding: 10px 20px;
+//   background-color: $primary-color1;
+//   color: $secondary-color2;
+//   border: none;
+//   border-radius: $input-border-radius;
+//   cursor: pointer;
+//   margin-left: 10px; /* Space between input and button */
+//   font-size: $font-size;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-left: 0;
+//     margin-top: 10px; /* Space when stacked vertically */
+//   }
+
+//   &:hover {
+//     background-color: $primary-color2;
+//   }
+// }
+
+
+// /* Light Mode */
+// :root {
+//   --bg-color: $light-bg-color;
+//   --text-color: $light-text-color;
+//   --border-color: $light-border-color;
+//   --input-bg-color: $secondary-color2; // Light input background color
+//   --input-border-color: $secondary-color4; // Light input border color
+//   --message-bg-color: $secondary-color5; // Light mode message background color
+// }
+
+// /* Dark Mode */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --bg-color: $dark-bg-color;
+//     --text-color: $dark-text-color;
+//     --border-color: $dark-border-color;
+//     --input-bg-color: $dark-input-bg-color;
+//     --input-border-color: $dark-input-border-color;
+//     --message-bg-color: $secondary-color1; // Dark mode message background color
+//   }
+// }
+
+// .chat-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: var(--bg-color);
+//   font-family: $font-family;
+//   color: var(--text-color);
+//   align-items: center;
+//   padding: 20px;
+//   @media (max-width: $tablet-breakpoint) {
+//     height: 100%;
+//     padding: 10px;
+//   }
+// }
+
+// .chat-box {
+//   flex: 1;
+//   width: 100%;
+//   max-width: 800px; // Limit the width on larger screens
+//   padding: 20px;
+//   overflow-y: auto;
+//   background-color: var(--bg-color);
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px; // Add gap between messages for cleaner separation
+// }
+
+// .message {
+//   margin: 5px 0;
+//   padding: 10px 15px;
+//   border-radius: $input-border-radius;
+//   max-width: 75%;
+//   word-wrap: break-word;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   align-self: flex-end; /* Aligns all messages to the right */
+//   box-shadow: $box-shadow; // Add subtle shadow for depth
+//   background-color: var(--message-bg-color); // Dynamic background color for messages
+
+//   &.user {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: right;
+//   }
+
+//   &.assistant {
+//     background-color: var(--text-color);
+//     color: var(--bg-color);
+//     align-self: flex-start;
+//     text-align: left;
+//     border: 1px solid var(--border-color); // Add border for better definition
+//   }
+
+//   &.typing {
+//     background-color: $primary-color1;
+//     color: $secondary-color2;
+//     text-align: left;
+//     border: 1px dashed $primary-color2;
+//     font-style: italic;
+//   }
+// }
+
+// .loading-animation {
+//   display: flex;
+//   justify-content: center;
+//   margin: 10px 0;
+// }
+
+// .input-form {
+//   display: flex;
+//   flex-direction: row; /* Arrange input and button horizontally */
+//   border-top: 1px solid var(--border-color);
+//   padding: 10px;
+//   background-color: var(--bg-color);
+//   width: 100%;
+//   max-width: 800px; // Limit the width on larger screens
+//   align-items: center;
+//   @media (max-width: $tablet-breakpoint) {
+//     flex-direction: column; /* Stack vertically on smaller screens */
+//     max-width: none;
+//   }
+// }
+
+// .input-box {
+//   flex: 1;
+//   padding: $input-padding;
+//   border: 1px solid var(--input-border-color);
+//   border-radius: $input-border-radius;
+//   resize: none;
+//   font-size: $font-size;
+//   background-color: var(--input-bg-color); // Use dynamic background color
+//   color: var(--text-color);
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-bottom: 10px; /* Add space when stacked vertically */
+//   }
+// }
+
+// .submit-button {
+//   padding: 10px 20px;
+//   background-color: $primary-color1;
+//   color: $secondary-color2;
+//   border: none;
+//   border-radius: $input-border-radius;
+//   cursor: pointer;
+//   margin-left: 10px; /* Space between input and button */
+//   font-size: $font-size;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease;
+//   @media (max-width: $tablet-breakpoint) {
+//     margin-left: 0;
+//     margin-top: 10px; /* Space when stacked vertically */
+//   }
+
+//   &:hover {
+//     background-color: $primary-color2;
+//   }
+// }
+
+
+
+
+// src/styles/chat.scss
+
+@import '../../styles/partials/variables.scss';
+
+/* Light Mode */
+:root {
+  --bg-color: $light-bg-color;
+  --text-color: $light-text-color;
+  --border-color: $light-border-color;
+  --input-bg-color: $secondary-color4; // Light input background color
+  --input-border-color: $secondary-color5; // Light input border color
+  --message-bg-color: $secondary-color3; // Light mode message background color
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: $dark-bg-color;
+    --text-color: $dark-text-color;
+    --border-color: $dark-border-color;
+    --input-bg-color: $dark-input-bg-color;
+    --input-border-color: $dark-input-border-color;
+    --message-bg-color: $secondary-color1; // Dark mode message background color
+  }
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-color);
+  font-family: $font-family;
+  color: var(--text-color);
+  align-items: center;
+  padding: 20px;
+  @media (max-width: $tablet-breakpoint) {
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+.chat-box {
+  flex: 1;
+  width: 100%;
+  max-width: 800px; // Limit the width on larger screens
+  padding: 20px;
+  overflow-y: auto;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; // Add gap between messages for cleaner separation
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px 15px;
+  border-radius: $input-border-radius;
+  max-width: 75%;
+  word-wrap: break-word;
+  font-size: $font-size;
+  line-height: $line-height;
+  align-self: flex-end; /* Aligns all messages to the right */
+  box-shadow: $box-shadow; // Add subtle shadow for depth
+  background-color: var(--message-bg-color); // Dynamic background color for messages
+
+  &.user {
+    background-color: $primary-color1;
+    color: $secondary-color2;
+    text-align: right;
+  }
+
+  &.assistant {
+    background-color: var(--message-bg-color);
+    color: var(--text-color);
+    align-self: flex-start;
+    text-align: left;
+    border: 1px solid var(--border-color); // Add border for better definition
+  }
+
+  &.typing {
+    background-color: $primary-color1;
+    color: $secondary-color2;
+    text-align: left;
+    border: 1px dashed $primary-color2;
+    font-style: italic;
+  }
+}
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: row; /* Arrange input and button horizontally */
+  border-top: 1px solid var(--border-color);
+  padding: 10px;
+  background-color: var(--bg-color);
+  width: 100%;
+  max-width: 800px; // Limit the width on larger screens
+  align-items: center;
+  @media (max-width: $tablet-breakpoint) {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    max-width: none;
+  }
+}
+
+.input-box {
+  flex: 1;
+  padding: $input-padding;
+  border: 1px solid var(--input-border-color);
+  border-radius: $input-border-radius;
+  resize: none;
+  font-size: $font-size;
+  background-color: var(--input-bg-color); // Use dynamic background color
+  color: var(--text-color);
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 10px; /* Add space when stacked vertically */
+  }
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: $primary-color1;
+  color: $secondary-color2;
+  border: none;
+  border-radius: $input-border-radius;
+  cursor: pointer;
+  margin-left: 10px; /* Space between input and button */
+  font-size: $font-size;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  @media (max-width: $tablet-breakpoint) {
+    margin-left: 0;
+    margin-top: 10px; /* Space when stacked vertically */
+  }
+
+  &:hover {
+    background-color: $primary-color2;
+  }
+}
