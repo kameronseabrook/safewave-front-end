@@ -2246,7 +2246,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Lottie from "react-lottie";
 import * as loadingAnimationData from "../../assets/animations/Anikihamster.json"; 
-const API_URL = process.env.REACT_APP_API_URL || 'https://safewave-back-end-8299c9035225.herokuapp.com/'
+const API_URL = process.env.REACT_APP_API_URL || 'https://safewave-back-end-8299c9035225.herokuapp.com'
 
 function Chat() {
   const [messages, setMessages] = useState([]);
