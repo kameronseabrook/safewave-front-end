@@ -2245,7 +2245,8 @@ import "./chat.scss";
 import React, { useState } from "react";
 import axios from "axios";
 import Lottie from "react-lottie";
-import * as loadingAnimationData from "../../assets/animations/Anikihamster.json"; // Ensure you have this JSON file
+import * as loadingAnimationData from "../../assets/animations/Anikihamster.json"; 
+const API_URL = process.env.REACT_APP_API_URL || 'https://safewave-back-end-8299c9035225.herokuapp.com'
 
 function Chat() {
   const [messages, setMessages] = useState([]);
@@ -2261,7 +2262,7 @@ function Chat() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8080/api/safewaveai', newQuestion, {
+      const response = await axios.post(API_URL, newQuestion, {
         withCredentials: true
       });
       animateMessage(response.data.data);
